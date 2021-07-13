@@ -170,7 +170,7 @@ void irr()
 					{
 						r[rend] = q[i];
 						rend++;
-						n_temp++;
+						//n_temp++;
 					}
 				}
 				if(rend!=0)
@@ -219,7 +219,7 @@ void irr()
 		
 		//Execute the process present at rbeg
 		cout<<"<"<<time<<">"<<"---"<<r[rbeg].pno<<"---";
-		exec_temp = (exec_temp+1)%(n_temp);
+		//exec_temp = (exec_temp+1)%(n_temp);
 		
 		//cout<<"Executing : "<<r[rbeg].pno<<" From  : "<<time<<" to :";
 		
