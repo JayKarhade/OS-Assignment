@@ -15,9 +15,9 @@ struct process
 
 
 //Global variables
-int n=5;
-int burst[5] = {10,20,30,40,50};
-int arrival[5] = {0,0,0,0,0};
+int n=6;
+int burst[6] = {20,10,90,30,40,50};
+int arrival[6] = {0,0,10,10,20,35};
 struct process p[100];
 
 void input()
@@ -214,7 +214,8 @@ void irr()
 				}
 			
 				//Find the optimal time quantum		
-				tq = (median + r[rend -1].bt)/2;	
+				tq = (median + r[rend -1].bt)/2;
+				printf("Current Time quantum is : %d \n",tq);
 		}	
 		
 		//Execute the process present at rbeg
